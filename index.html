@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Corazón es Tuyo</title>
+    <link rel="icon" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Boton Modo Oscuro -->
+        <button id="toggleDarkMode" class="floating-button">
+            <i class="ri-sun-line"></i>
+        </button>
+
+        <!-- Sección Inicial -->
+        <section class="section active" id="inicio">
+            <h1>Mi Corazón es Tuyo ❤️</h1>
+            <p>Desde que llegaste a mi vida, todo tiene más color. ¿Me permiter compartir algo especial contigo?</p>
+            <button class="btn" onclick="showSection('declaracion')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                    fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> Siguiente</button>
+        </section>
+
+        <!-- Sección de Declaración -->
+        <section class="section" id="declaracion">
+            <h1>¿Quieres ser mi San Valentín?</h1>
+            <p>Quiero compartir contigo cada risa, cada momento y cada latido de mi corazón. ¿Aceptas ser mi compañera
+                en
+                esta aventura llamada amor?</p>
+            <div class="button-container">
+                <button class="btn" onclick="showSection('aceptacion')">¡Sí! 💖</button>
+                <button class="btn" id="btnNo">No! 😢</button>
+            </div>
+        </section>
+
+        <!-- Sección de Aceptación -->
+        <section class="section" id="aceptacion">
+            <h1>¡Sabía que dirías que sí!</h1>
+            <div class="carta">
+                <h1>Esta carta es para ti</h1>
+                <p>Mi amor,
+
+                    Desde el momento en que nuestros caminos se cruzaron, supe que mi vida cambiaría para siempre. Cada
+                    día a tu lado es un regalo que atesoro con todo mi corazón. Tu sonrisa ilumina mis días, y tu amor
+                    me da fuerzas para ser mejor persona. Eres mi refugio, mi inspiración y mi razón para creer en el
+                    amor verdadero. <br>
+
+                    No hay palabras suficientes para expresar lo que siento por ti, pero quiero que sepas que mi
+                    compromiso contigo es inquebrantable. Prometo amarte en los días soleados y en las noches oscuras,
+                    en los momentos de risas y en aquellos de lágrimas. Juntos, construiremos un futuro lleno de sueños
+                    cumplidos, complicidades y momentos inolvidables. <br>
+
+                    Eres la persona con la que quiero compartir cada latido de mi corazón. Gracias por aceptar ser parte
+                    de mi vida y por permitirme ser parte de la tuya. Te amo más de lo que las palabras pueden decir, y
+                    hoy, mañana y siempre, seré tuyo. <br>
+
+                    Con todo mi amor,<br>
+                    - </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
